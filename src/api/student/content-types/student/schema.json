@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "singularName": "student",
+    "pluralName": "students",
+    "displayName": "Student",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "college": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::college.college",
+      "inversedBy": "students"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "Masculino",
+        "Femenino",
+        "Otro"
+      ],
+      "required": false
+    },
+    "course": {
+      "type": "enumeration",
+      "enum": [
+        "ESO 1º",
+        "ESO 2º",
+        "ESO 3º",
+        "ESO 4º"
+      ]
+    },
+    "depresion": {
+      "type": "decimal",
+      "required": true
+    },
+    "suicidio": {
+      "type": "decimal",
+      "required": true
+    },
+    "ansiedad": {
+      "type": "decimal",
+      "required": true
+    },
+    "agresividad": {
+      "type": "decimal",
+      "required": true
+    },
+    "drogas": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_data_questions",
+  "info": {
+    "displayName": "Question",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "answer": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data.answer"
+    }
+  }
+}
