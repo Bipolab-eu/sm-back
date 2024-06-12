@@ -19,6 +19,8 @@ export interface DataQuestion extends Schema.Component {
   };
   attributes: {
     title: Attribute.String & Attribute.Required;
+    kind: Attribute.Enumeration<['zeroToTen', 'yesOrNo', 'checklist']> &
+      Attribute.Required;
     answer: Attribute.Component<'data.answer', true>;
   };
 }
