@@ -10,6 +10,15 @@
       "type": "string",
       "required": true
     },
+    "kind": {
+      "type": "enumeration",
+      "enum": [
+        "zeroToTen",
+        "yesOrNo",
+        "checklist"
+      ],
+      "required": true
+    },
     "answer": {
       "type": "component",
       "repeatable": true,
