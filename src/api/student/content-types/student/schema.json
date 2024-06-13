@@ -12,6 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "age": {
+      "type": "integer",
+      "required": true
+    },
     "college": {
       "type": "relation",
       "relation": "manyToOne",
@@ -111,6 +115,6 @@
     "usoRS": {
       "type": "decimal",
       "required": true
-    }
+    }   
   }
 }

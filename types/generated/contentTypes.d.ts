@@ -860,6 +860,7 @@ export interface ApiStudentStudent extends Schema.CollectionType {
     draftAndPublish: false;
   };
   attributes: {
+    age: Attribute.Integer & Attribute.Required;
     college: Attribute.Relation<
       'api::student.student',
       'manyToOne',
