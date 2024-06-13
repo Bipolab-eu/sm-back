@@ -12,10 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "age": {
-      "type": "integer",
-      "required": true
-    },
     "college": {
       "type": "relation",
       "relation": "manyToOne",
@@ -39,6 +35,10 @@
         "ESO 3º",
         "ESO 4º"
       ]
+    },
+    "age": {
+      "type": "integer",
+      "required": true
     },
     "depresion": {
       "type": "decimal",

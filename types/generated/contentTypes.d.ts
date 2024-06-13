@@ -860,7 +860,6 @@ export interface ApiStudentStudent extends Schema.CollectionType {
     draftAndPublish: false;
   };
   attributes: {
-    age: Attribute.Integer & Attribute.Required;
     college: Attribute.Relation<
       'api::student.student',
       'manyToOne',
@@ -870,6 +869,7 @@ export interface ApiStudentStudent extends Schema.CollectionType {
     course: Attribute.Enumeration<
       ['ESO 1\u00BA', 'ESO 2\u00BA', 'ESO 3\u00BA', 'ESO 4\u00BA']
     >;
+    age: Attribute.Integer & Attribute.Required;
     depresion: Attribute.Decimal & Attribute.Required;
     suicidio: Attribute.Decimal & Attribute.Required;
     ansiedad: Attribute.Decimal & Attribute.Required;
