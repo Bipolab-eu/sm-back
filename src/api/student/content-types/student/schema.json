@@ -55,6 +55,62 @@
     "drogas": {
       "type": "decimal",
       "required": true
+    },
+    "dificultadesEmocionales": {
+      "type": "decimal",
+      "required": true
+    },
+    "prosocial": {
+      "type": "decimal",
+      "required": true
+    },
+    "autoestima": {
+      "type": "decimal",
+      "required": true
+    },
+    "absentismo": {
+      "type": "decimal",
+      "required": true
+    },
+    "educacionSexual": {
+      "type": "decimal",
+      "required": true
+    },
+    "habitosPositivos": {
+      "type": "decimal",
+      "required": true
+    },
+    "bullying": {
+      "type": "decimal",
+      "required": true
+    },
+    "pertenencia": {
+      "type": "decimal",
+      "required": true
+    },
+    "educacionSMental": {
+      "type": "decimal",
+      "required": true
+    },
+    "relacionPadres": {
+      "type": "decimal",
+      "required": true
+    },
+    "comunidad": {
+      "type": "decimal",
+      "required": true
+    },
+    "cooperacion": {
+      "type": "decimal",
+      "required": true
+    },
+    "integracion": {
+      "type": "decimal",
+      "required": true
+    },
+    "usoRS": {
+      "type": "decimal",
+      "required": true
     }
   }
 }

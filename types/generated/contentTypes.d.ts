@@ -874,6 +874,20 @@ export interface ApiStudentStudent extends Schema.CollectionType {
     ansiedad: Attribute.Decimal & Attribute.Required;
     agresividad: Attribute.Decimal & Attribute.Required;
     drogas: Attribute.Decimal & Attribute.Required;
+    dificultadesEmocionales: Attribute.Decimal & Attribute.Required;
+    prosocial: Attribute.Decimal & Attribute.Required;
+    autoestima: Attribute.Decimal & Attribute.Required;
+    absentismo: Attribute.Decimal & Attribute.Required;
+    educacionSexual: Attribute.Decimal & Attribute.Required;
+    habitosPositivos: Attribute.Decimal & Attribute.Required;
+    bullying: Attribute.Decimal & Attribute.Required;
+    pertenencia: Attribute.Decimal & Attribute.Required;
+    educacionSMental: Attribute.Decimal & Attribute.Required;
+    relacionPadres: Attribute.Decimal & Attribute.Required;
+    comunidad: Attribute.Decimal & Attribute.Required;
+    cooperacion: Attribute.Decimal & Attribute.Required;
+    integracion: Attribute.Decimal & Attribute.Required;
+    usoRS: Attribute.Decimal & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
