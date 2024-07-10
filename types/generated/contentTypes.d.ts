@@ -808,7 +808,6 @@ export interface ApiCollegeCollege extends Schema.CollectionType {
       'oneToMany',
       'api::student.student'
     >;
-    test: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
