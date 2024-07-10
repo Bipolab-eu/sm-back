@@ -115,6 +115,6 @@
     "usoRS": {
       "type": "decimal",
       "required": true
-    }   
+    }
   }
 }

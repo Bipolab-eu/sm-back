@@ -26,6 +26,9 @@
       "relation": "oneToMany",
       "target": "api::student.student",
       "mappedBy": "college"
+    },
+    "test": {
+      "type": "string"
     }
   }
 }
