@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_data_lists",
+  "info": {
+    "displayName": "List",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

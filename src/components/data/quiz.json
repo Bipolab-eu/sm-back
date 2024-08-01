@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_data_quizzes",
+  "info": {
+    "displayName": "Quiz",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "answer": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data.list"
+    }
+  }
+}

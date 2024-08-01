@@ -883,6 +883,38 @@ export interface ApiStudentStudent extends Schema.CollectionType {
   };
 }
 
+export interface ApiSurveySurvey extends Schema.CollectionType {
+  collectionName: 'surveys';
+  info: {
+    singularName: 'survey';
+    pluralName: 'surveys';
+    displayName: 'Survey';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String;
+    form: Attribute.Component<'data.quiz'> & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::survey.survey',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::survey.survey',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -903,6 +935,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::college.college': ApiCollegeCollege;
       'api::student.student': ApiStudentStudent;
+      'api::survey.survey': ApiSurveySurvey;
     }
   }
 }
