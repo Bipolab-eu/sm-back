@@ -825,29 +825,6 @@ export interface ApiCollegeCollege extends Schema.CollectionType {
   };
 }
 
-export interface ApiQuizQuiz extends Schema.CollectionType {
-  collectionName: 'quizzes';
-  info: {
-    singularName: 'quiz';
-    pluralName: 'quizzes';
-    displayName: 'Quiz';
-    description: '';
-  };
-  options: {
-    draftAndPublish: false;
-  };
-  attributes: {
-    title: Attribute.String;
-    question: Attribute.Component<'data.question', true>;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<'api::quiz.quiz', 'oneToOne', 'admin::user'> &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<'api::quiz.quiz', 'oneToOne', 'admin::user'> &
-      Attribute.Private;
-  };
-}
-
 export interface ApiStudentStudent extends Schema.CollectionType {
   collectionName: 'students';
   info: {
@@ -925,7 +902,6 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::college.college': ApiCollegeCollege;
-      'api::quiz.quiz': ApiQuizQuiz;
       'api::student.student': ApiStudentStudent;
     }
   }
