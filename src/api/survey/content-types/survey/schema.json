@@ -17,7 +17,7 @@
     },
     "form": {
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "data.quiz",
       "required": true
     }

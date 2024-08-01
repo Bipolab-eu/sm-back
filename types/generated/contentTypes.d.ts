@@ -896,7 +896,7 @@ export interface ApiSurveySurvey extends Schema.CollectionType {
   };
   attributes: {
     title: Attribute.String;
-    form: Attribute.Component<'data.quiz'> & Attribute.Required;
+    form: Attribute.Component<'data.quiz', true> & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
